@@ -1,6 +1,6 @@
 export interface Repository {
     id: number;
     name: string;
-    fullName: string;
-    link: string;
+    full_name: string;
+    url: string;
 }
