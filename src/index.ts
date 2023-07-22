@@ -44,8 +44,8 @@ function createTableRepoRow({ id, name, fullName, link }: Repository) {
         <tr>
             <td>${id}</td>
             <td>${name}</td>
-            <td>${fullName ?? "Not fullname"}</td>
-            <td>${link ?? "Not link"}</td>
+            <td>${full_name ?? "Not fullname"}</td>
+            <td>${url?? "Not link"}</td>
         </tr>
     `;
 
