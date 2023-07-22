@@ -37,7 +37,8 @@ function createTableRepoRow({ id, name, full_name, html_url: url }: Repository) 
             <td>${name}</td>
             <td>${full_name ?? "Not fullname"}</td>
             <td>
-                ${url ? `<a href="${url}">${url}</a>` : "Not link" }
+                ${url ? `<a  target="_blank"
+                href="${url}">${url}</a>` : "Not link" }
             </td>
         </tr>
     `;
