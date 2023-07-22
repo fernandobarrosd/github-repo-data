@@ -1,20 +1,11 @@
 import { Repository } from "./@types/Repository";
 
 
-
-
-
-
-
-
-
 const domElements = {
     loadingContainer: document.querySelector(".loading-container"),
     userRepoTable: document.querySelector("table.c-user-repo-table"),
     messageElement: document.querySelector("span.message")
 };
-
-
 
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -45,7 +36,9 @@ function createTableRepoRow({ id, name, full_name, url }: Repository) {
             <td>${id}</td>
             <td>${name}</td>
             <td>${full_name ?? "Not fullname"}</td>
-            <td>${url?? "Not link"}</td>
+            <td>
+                ${url ? `<a href="${url}">${url}</a>` : "Not link" }
+            </td>
         </tr>
     `;
 
@@ -53,12 +46,6 @@ function createTableRepoRow({ id, name, full_name, url }: Repository) {
     if (tableBody) {
         tableBody.insertAdjacentHTML("beforeend", tableRow);
     }
-
-
-
-
-
-    
 }
 
 

@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "vite",
+    "start:dev": "vite",
     "ts:build": "tsc",
     "build": "vite build",
-    "preview": "vite preview"
+    "start": "vite preview"
   },
   "devDependencies": {
     "sass": "^1.60.0",

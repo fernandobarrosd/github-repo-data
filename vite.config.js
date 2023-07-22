@@ -3,9 +3,10 @@ import { defineConfig } from "vite";
 
 
 export default defineConfig({
-    root: path.resolve("./"),
+    preview: {
+        port: 5000
+    },
     server: {
-        port: 8081,
-        
+        port: 3000, 
     }
 });
