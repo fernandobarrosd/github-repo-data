@@ -29,7 +29,7 @@ function setMessage(message: string) {
 }
 
 
-function createTableRepoRow({ id, name, full_name, url }: Repository) {
+function createTableRepoRow({ id, name, full_name, html_url: url }: Repository) {
     const tableBody = domElements.userRepoTable?.querySelector("tbody");
     const tableRow = `
         <tr>
